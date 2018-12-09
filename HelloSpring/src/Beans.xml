@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!-- This is a bean! This is used for Inversion of Control/Dervied injection Injection -->
+<!-- Every bean starts with collecting all the relavent information wuth these startard links to servers. -->
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!-- The id is for linking. The id needs to match context.getBean("") string or it cause an error. -->
+    <!-- The class is what Java class we are going to instance/inject. Make sure you use . for navagating files. -->
+   <bean id = "helloWorld" class = "hellospring.HelloWorld">
+      <!-- The property is setting up the property of a class. -->
+      <!-- The name is for the varable in the class and the value is for setting the value in the class. -->
+      <property name = "message" value = "Hello World!"/>
+   </bean>
+
+</beans>
